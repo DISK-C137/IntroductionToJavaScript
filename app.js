@@ -38,12 +38,14 @@
 // let name = prompt("enter your name.")
 // console.log("Hello "+name)
 
-// let lotto_number = prompt("Enter Your Number.")
-// let result = Math.floor(Math.random() * 6)
-// let note = lotto_number == result ? "Welcome!" : "Not lucky!"
-// document.getElementById("your_number").innerHTML = lotto_number
-// document.getElementById("result").innerHTML = result
-// document.getElementById("note").innerHTML = note
+let lotto_number = prompt("กรุณากรอกเลขที่ต้องการ.")
+let result = Math.floor(Math.random() * 1000)
+let note = lotto_number == result ? "คุณถูกรางวัลเลขท้าย 3 ตัว!" : "คุณไม่ถูกรางวัลเลขท้าย 3 ตัว!"
+
+document.getElementById("your_number").innerHTML = 
+"เลขของคุณ คือ "+lotto_number
+document.getElementById("result").innerHTML = "เลขที่ออก คือ "+result
+document.getElementById("note").innerHTML = note
 
 // console.log(1 == 1)
 // console.log(2 == "2")
